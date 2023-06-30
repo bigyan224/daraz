@@ -158,12 +158,12 @@ align-items: center;
     background-color: #f5f5f5;
     height: 500px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .shop-menu-container{
     height: 40px;
     width: 1188px;
-    display: flex;
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -176,6 +176,7 @@ align-items: center;
     border-radius: 20px;
     display: flex;
     align-items: center;
+    transition: box-shadow 0.25s;
 }
 .shop-menu img{
     height: 32px;
@@ -196,24 +197,51 @@ align-items: center;
 .shop-menu:hover{
     box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.shop-menu:nth-child(1):hover span {
-    color: #FF0000; /* Red */
-  }
   
   .shop-menu:nth-child(2):hover span {
-    color: #00FF00; /* Green */
+    color: #902ea1; /* Green */
+    transition: 0.25s;
   }
   
   .shop-menu:nth-child(3):hover span {
-    color: #0000FF; /* Blue */
+    color: rgb(184, 242, 237); /* Blue */
+    transition: 0.25s;
+
   }
   
   .shop-menu:nth-child(4):hover span {
-    color: #FFFF00; /* Yellow */
+    color: #ffb20d; /* Yellow */
+    transition: 0.25s;
+
   }
   
   .shop-menu:nth-child(5):hover span {
-    color: #FF00FF; /* Magenta */
+    color: #ff38ff; /* Magenta */
+    transition: 0.25s;
+
+  }
+  .categories{
+    height: 335px;
+    margin-top: 50px;
+  }
+  .cat-head{
+    height: 38px;
+  }
+  .cat-head p{
+    font-size: 22px;
+  }
+  .cat-box{
+    height: 297px;
+    width: 1188px;
+    display: flex;
+justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cat-box div{
+    height: 147px;
+    width: 146px;
+    background-color: white;
+    margin: 1px;
   }
   
 
